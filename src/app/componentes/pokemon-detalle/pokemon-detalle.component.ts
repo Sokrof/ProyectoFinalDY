@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {ApiResultListPokemonTCG, PokemonCard} from "../../common/interfacesPokemonTCG";
+import {PokemonCard} from "../../common/interfacesPokemonTCG";
 import {PokemonService} from "../../services/pokemon.service";
 import {ActivatedRoute} from "@angular/router";
 
