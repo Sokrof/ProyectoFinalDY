@@ -1,11 +1,12 @@
 import {Component} from '@angular/core';
 import {PokemonService} from "../../services/pokemon.service";
 import {ApiResultListPokemonTCG, PokemonCard} from "../../common/interfacesPokemonTCG";
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-lista-pokemons',
   standalone: true,
-  imports: [],
+  imports: [RouterModule,RouterOutlet,RouterLink],
   templateUrl: './lista-pokemons.component.html',
   styleUrl: './lista-pokemons.component.css'
 })
