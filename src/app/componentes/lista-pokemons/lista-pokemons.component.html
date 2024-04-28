@@ -1,1 +1,5 @@
-<p>lista-pokemons works!</p>
+@for(poke of pokemons;track poke.id){
+  <ul>
+    <li>{{poke.name}}</li>
+  </ul>
+}
