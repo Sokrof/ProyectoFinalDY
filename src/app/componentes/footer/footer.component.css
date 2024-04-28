@@ -43,18 +43,17 @@ main {
 
 /*? footer containers */
 footer {
-    position: fixed; /* Cambia a fixed para que esté siempre en la parte inferior */
-    bottom: 0;
+    width: 100%; /* El footer ocupará el 0% del ancho del contenedor padre */
+    margin: 0 auto; /* Centra el footer horizontalmente */
     background-color: var(--footer-bg);
-    width: 100%;
-    height: 30%; /* Establece la altura al 30% de la pantalla */
+    padding: 20px; /* Espaciado interno del footer */
+    height: auto; /* Altura automática basada en el contenido */
 }
 
 *::selection {
     background: var(--primary);
     color: var(--footer-bg);
 }
-
 
 .footer-wrapper {
     display: flex;
@@ -87,8 +86,8 @@ footer {
 }
 
 .footer-logo {
-    margin-bottom: 1.5rem;
-    width: 14rem;
+    margin-bottom: 0.5rem;
+    width: 12rem;
 }
 
 /*? socials */
@@ -96,7 +95,6 @@ footer {
     display: flex;
     gap: 0.5rem;
     margin: 0 auto;
-    margin-bottom: 2rem;
 }
 
 .social-links {

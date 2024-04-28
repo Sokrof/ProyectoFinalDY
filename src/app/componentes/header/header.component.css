@@ -1,4 +1,4 @@
-:root {
+:host {
   --primary: #1f1f1f;
   --background: #1f587e;
   --gray: #847F90;
@@ -6,7 +6,7 @@
   --navbar-height: 60px;
 }
 
-body {
+:host {
   font-family: "Red Hat Display", 
       sans-serif;
   font-size: 16px;
