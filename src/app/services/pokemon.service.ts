@@ -26,4 +26,5 @@ export class PokemonService {
     return this.http.get<ApiResultOnePokemonTCG>(`${this.URI}${id}`);
   }
 
+
 }

@@ -22,6 +22,7 @@ export class PokemonDetalleComponent {
   }
 
 
+
   private loadPokemon() {
     //Aquí se guarda en una variable 'id' el valor del parámetro 'id' de la ruta, que está definido en el archivo rutas
     //en la ruta de detalle con pokemon/:id

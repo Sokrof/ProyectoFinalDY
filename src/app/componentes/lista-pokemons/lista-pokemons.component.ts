@@ -18,6 +18,7 @@ export class ListaPokemonsComponent {
   dataApi!: ApiResultListPokemonTCG;
   page = 1;
 
+
   //Inyectamos el servicio para poder usarlo y así acceder a sus funciones.
   private pokemonService: PokemonService = inject(PokemonService);
 

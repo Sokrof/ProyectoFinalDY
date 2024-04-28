@@ -4,6 +4,7 @@ import {PokemonDetalleComponent} from "./componentes/pokemon-detalle/pokemon-det
 import {PrincipalComponent} from "./componentes/principal/principal.component";
 export const routes: Routes = [
 
+
   //Definimos las rutas de los componentes.
   {
     //Esta es la ruta vacía
