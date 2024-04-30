@@ -12,15 +12,12 @@ import { DeckService } from 'src/app/_services/desk.services';
 })
 export class NavComponent implements OnInit {
 
-  numDecks: number = 0; // Variable para almacenar el número de mazos
-
+  numDecks: number = 0;
   constructor(private deckService: DeckService) { }
 
   ngOnInit(): void {
-    // Al inicializar el componente, se suscribe al servicio de mazos para actualizar el número de mazos
     this.deckService.getDeck().subscribe(decks => {
-      this.numDecks = this.deckService.countDecks(); // Actualiza el número de mazos (Será operativo cuando tengamos el servicio)
+      this.numDecks = this.deckService.countDecks();
     });
   }
 }
-
