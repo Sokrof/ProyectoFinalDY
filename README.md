@@ -1,26 +1,41 @@
-# ProyectoAngular
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+# Pokémon
+Aplicación desarrollada en Angular que utiliza la API https://pokemontcg.io/
 
-## Development server
+# Instalación y Ejecución
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+1. Clona este repositorio: `git clone https://github.com/Sokrof/ProyectoFinalDY`;
+2. Ejecuta el comando `npm install` para instalar las dependencias;
+3. Ejecuta el comando `ng serve` para iniciar la aplicación.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Bibliotecas Utilizadas
 
-## Build
+- Tailwindcss
+- Uuid
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Servicios
 
-## Running unit tests
+Se utilizó BaseService para centralizar la lógica de comunicación con la API, con el objetivo de reutilizar código, simplificar el mantenimiento, facilitar la extensión, estandarizar y mejorar la testabilidad. Encapsula operaciones comunes como lectura y búsqueda, proporcionando métodos genéricos que otros servicios pueden utilizar para interactuar de manera consistente y eficiente con la API.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Estructura de Carpetas
 
-## Running end-to-end tests
+├── app/
+   ├── _core/           # Archivos relacionados con el núcleo de la aplicación
+   ├── _helpers/        # Funciones y utilidades auxiliares                   
+   ├── _models/         # Modelos de la aplicación
+   ├── _services/       # Servicios compartidos
+   ├── modules/         # Componentes de las páginas principales
+   ├── shared/          # Componentes y utilidades compartidos
+      ├── components/   # Componentes reutilizables  
+      ├── pipes/        # Pipes globales
+├── app.component.ts    # Componente raíz de la aplicación
+├── app.module.ts     
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Validación
+La validación personalizada en Angular es una forma de crear reglas de validación específicas para satisfacer las necesidades únicas de tu aplicación. En este caso, por ejemplo, la baraja debe tener entre 2 y 60 cartas.
 
-## Further help
+# Almacenamiento de Barajas en Memoria
+Se ha implementado CRUD (crear, leer, actualizar y eliminar) para almacenar mazos en memoria dentro de tu aplicación Angular. El uso de Observables permite una comunicación reactiva y asíncrona entre componentes que dependen de estos datos.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Filtros en la API
+Este método permite buscar cartas de la API basadas en un criterio de búsqueda proporcionado, devolviendo un Observable que emite los datos correspondientes. Esto es útil para implementar funcionalidades de búsqueda y filtrado en tu aplicación Angular, manteniendo la lógica de comunicación con la API encapsulada dentro de un servicio reutilizable.
