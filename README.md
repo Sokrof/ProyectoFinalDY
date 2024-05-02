@@ -10,7 +10,7 @@ Aplicación desarrollada en Angular que utiliza la API https://pokemontcg.io/
 
 # Bibliotecas Utilizadas
 
-- Tailwindcss
+- Tailwindcss.
 - Uuid
 
 # Servicios
